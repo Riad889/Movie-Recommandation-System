@@ -1,10 +1,11 @@
 mkdir -p ~/.streamlit/
-
-# shellcheck disable=SC1009
-# shellcheck disable=SC1073
-echo "\
-[server]\n\
-port=$PORT\n\
-enableCORS=false\n\
-headless=true\n\
-\n\" > ~/.streamlit/config.toml
+echo "
+[general]n
+email = "riad1803153@gmail.com"n
+" > ~/.streamlit/credentials.toml
+echo "
+[server]n
+headless = truen
+enableCORS=falsen
+port = $PORTn
+" > ~/.streamlit/config.toml
